@@ -18,7 +18,7 @@ This web application displays a dynamic list of **upcoming Premier League soccer
 [`https://www.thesportsdb.com/api/v1/json/3/eventsnextleague.php?id=4328`](https://www.thesportsdb.com/api/v1/json/3/eventsnextleague.php?id=4328)
 
 🌐 **Live Demo:**  
-👉 [Click here to view the deployed project](https://your-deployed-link-here.com)  
+👉 https://manasviassignmentsportsorca.netlify.app/
 <!-- Replace with actual deployed link before submitting -->
 
 ---
@@ -57,5 +57,9 @@ This project goes beyond the base requirements with several professional-level f
 
 ---
 
-## 📂 File Structure
+project screenshots:-
+![image](https://github.com/user-attachments/assets/a0ce9d98-3800-4339-bcb4-25e1ede64b9d)
+![image](https://github.com/user-attachments/assets/b22e955d-7c07-4932-bec0-66675f162433)
+
+
 
