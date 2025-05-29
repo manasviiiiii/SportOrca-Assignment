@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SportsOrca - Live Soccer Matches</title>
+
+  <!-- Font Awesome & Fonts -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><i class="fas fa-futbol"></i> SportsOrca</h1>
+      <div class="subtitle">Premier League Live Matches</div>
+      <div class="api-badge">
+        <i class="fas fa-database"></i>
+        Powered by TheSportsDB API - https://www.thesportsdb.com/api/v1/json/3/eventsround.php
+      </div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat-item"><span class="stat-number" id="total-matches">0</span><span class="stat-label">Total Matches</span></div>
+      <div class="stat-item"><span class="stat-number" id="today-matches">0</span><span class="stat-label">This Week</span></div>
+      <div class="stat-item"><span class="stat-number" id="live-matches">0</span><span class="stat-label">Live Now</span></div>
+    </div>
+
+    <div id="loading" class="loading">
+      <div class="loading-spinner"></div>
+      <div>Loading latest Premier League matches...</div>
+      <div style="font-size: 0.9rem; opacity: 0.7; margin-top: 10px;">Fetching data from TheSportsDB API</div>
+    </div>
+
+    <div id="error" class="error" style="display: none;">
+      <i class="fas fa-exclamation-triangle" style="font-size: 2rem; margin-bottom: 15px;"></i>
+      <div id="error-message"></div>
+      <button onclick="loadMatches()" style="margin-top: 15px; padding: 10px 20px; background: white; color: #ff4757; border: none; border-radius: 10px; cursor: pointer; font-weight: 600;">
+        <i class="fas fa-redo"></i> Try Again
+      </button>
+    </div>
+
+    <div id="matches-container" class="matches-grid"></div>
+  </div>
+
+  <!-- External Script -->
+  <script src="script.js"></script>
+</body>
+</html>
